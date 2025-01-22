@@ -1,0 +1,3 @@
+#Para compilar el Sass: 
+
+sass --watch src/style/scss/global:src/style/css --no-source-map
