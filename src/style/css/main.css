@@ -34,6 +34,7 @@
   --color-text-secondary: var(--color-amber-200); /* Texto secundario, párrafos */
   --color-text-accent: var(--color-amber-400); /* Texto destacado, enlaces */
   --color-text-muted: var(--color-amber-200-60); /* Texto con menor énfasis, pies de página */
+  --color-gradient-body: linear-gradient(180deg, rgba(28,28,28, 1) 0%, rgba(44,24,16,1) 100%); /* Background Color Body */
   /* Colores para placeholders */
   --color-placeholder: rgba(253, 230, 138, 0.4); /* Texto placeholder en inputs */
   --font-family-cinzel: "Cinzel", serif;
@@ -57,104 +58,138 @@
   --font-size-7xl: 4.5rem; /* 72px */
 }
 
-.header {
-  grid-column: 1/6;
-  z-index: 50;
-  transition: all 0.3s;
+body {
+  background: var(--color-gradient-body);
 }
-.header.scrolled {
-  background: var(--color-bg-header-scroll);
-  backdrop-filter: blur(10px);
-  padding: 1rem 0;
+
+#section-menu {
+  padding: 96px 0;
 }
-.header.not-scrolled {
-  background: transparent;
-  padding: 1.5rem 0;
-}
-.header .nav-content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.header .container {
+#section-menu #container-menu-content {
   margin: 0 auto;
-  padding: 0.2rem 1rem;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 24px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .logo {
-  font-size: var(--font-size-2xl);
-  font-family: var(--font-family-cinzel);
-  color: var(--color-amber-400);
-}
-.header .nav-items {
-  display: none;
   justify-content: center;
   align-items: center;
-}
-@media (min-width: 768px) {
-  .header .nav-items {
-    display: flex;
-    gap: 2rem;
-  }
-}
-.header .nav-items .nav-link {
-  color: var(--color-amber-200);
-  text-decoration: none;
-  font-family: var(--font-family-geist);
-  font-size: var(--font-size-base);
-  transition: color 0.3s;
-}
-.header .nav-items .nav-link.hover {
-  color: var(--color-amber-400);
-}
-.header .nav-items .nav-button {
-  padding: 10px 24px;
-  background: var(--color-button-bg);
-  border-radius: 9999px;
-  font-size: var(--color-size-sm);
-  color: var(--color-button-text);
-  transition: background 0.3s;
-  border: none;
-}
-.header .nav-items .nav-button.hover {
-  background: var(--color-button-hover);
-}
-.header .menu-toggle {
-  display: flex;
-  align-items: center;
-  background: none;
-  border: none;
-  color: var(--color-amber-400);
-}
-@media (min-width: 768px) {
-  .header .menu-toggle {
-    display: none;
-  }
-}
-.header .mobile-nav {
-  display: none;
   flex-direction: column;
-  gap: 1rem 0;
-  padding: 1rem 0;
+  justify-content: space-between;
+  text-align: center;
 }
-.header .mobile-nav .mobile-nav-link {
-  color: var(--color-amber-200);
-  text-decoration: none;
-  transition: color 0.3s;
+#section-menu #container-menu-content #menu-title {
+  margin-bottom: 4rem;
 }
-.header .mobile-nav .mobile-nav-link.hover {
+#section-menu #container-menu-content #cards-container-menu {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(210px, 1fr));
+  gap: 32px;
+}
+@media (max-width: 1000px) {
+  #section-menu #container-menu-content #cards-container-menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 765px) {
+  #section-menu #container-menu-content #cards-container-menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#section-menu #container-menu-content #cards-container-menu .card {
+  height: auto;
+  text-align: center;
+}
+#section-menu #container-menu-content #cards-container-menu .card * {
+  font-family: var(--font-family-geist);
+}
+#section-menu #container-menu-content #cards-container-menu .card .img-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+}
+#section-menu #container-menu-content #cards-container-menu .card .img-container img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+#section-menu #container-menu-content #cards-container-menu .card .img-container .filter {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--color-gradient-image-overlay);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.3;
+}
+#section-menu #container-menu-content #cards-container-menu .card .img-container:hover .filter {
+  opacity: 0.8;
+}
+#section-menu #container-menu-content #cards-container-menu .card .img-container:hover img {
+  transform: scale(1.05);
+}
+#section-menu #container-menu-content #cards-container-menu .card .card-content {
+  text-align: start;
+  padding: 13px 0;
+}
+#section-menu #container-menu-content #cards-container-menu .card .card-content > * {
+  margin: 7px 0;
+}
+#section-menu #container-menu-content #cards-container-menu .card .card-content .name-price-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+#section-menu #container-menu-content #cards-container-menu .card .card-content .name-price-line h3 {
+  color: var(--color-amber-100);
+  font-size: 1.285rem;
+}
+#section-menu #container-menu-content #cards-container-menu .card .card-content .name-price-line p {
+  font-weight: var(--font-weight-regular);
+  font-size: 0.925rem;
   color: var(--color-amber-400);
 }
-.header .mobile-nav .mobile-nav-button {
-  padding: 8px 24px;
-  background: var(--color-button-bg);
-  border-radius: 9999px;
+#section-menu #container-menu-content #cards-container-menu .card .card-content .card-description {
+  color: var(--color-amber-200-60);
+  font-size: 0.9rem;
+  line-height: 1.35rem;
+}
+#section-menu #container-menu-content #cards-container-menu .card .card-content .category {
+  color: var(--color-amber-400);
   font-size: var(--font-size-sm);
-  color: var(--color-button-text);
-  transition: background 0.3s;
+  font-weight: 600;
 }
-.header .mobile-nav .mobile-nav-button.hover {
-  background: var(--color-button-hover);
+#section-menu #container-menu-content #button-view-menu {
+  margin-top: 3rem;
+  width: 13rem;
 }
+
+.pretitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-amber-400);
+  font-family: var(--font-family-geist);
+}
+
+.title-section {
+  font-size: 3.25rem;
+  font-weight: 500;
+  font-family: var(--font-family-cinzel);
+  color: var(--color-amber-100);
+  line-height: 70px;
+}
+@media (max-width: 768px) {
+  .title-section {
+    font-size: 2.5rem;
+    margin-top: 0.75rem;
+    line-height: 55px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
