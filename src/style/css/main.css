@@ -121,18 +121,18 @@ body {
 }
 #section-menu #container-menu-content #cards-container-menu .card .img-container .filter {
   width: 100%;
-  height: 60%;
+  height: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
   background: var(--color-gradient-image-overlay);
   transition: opacity 0.3s ease-in-out;
-  opacity: 0.3;
+  opacity: 0;
 }
-#section-menu #container-menu-content #cards-container-menu .card .img-container:hover .filter {
-  opacity: 0.8;
+#section-menu #container-menu-content #cards-container-menu .card:hover .img-container .filter {
+  opacity: 0.85;
 }
-#section-menu #container-menu-content #cards-container-menu .card .img-container:hover img {
+#section-menu #container-menu-content #cards-container-menu .card:hover .img-container img {
   transform: scale(1.05);
 }
 #section-menu #container-menu-content #cards-container-menu .card .card-content {
@@ -155,6 +155,7 @@ body {
   font-weight: var(--font-weight-regular);
   font-size: 0.925rem;
   color: var(--color-amber-400);
+  margin: auto 0;
 }
 #section-menu #container-menu-content #cards-container-menu .card .card-content .card-description {
   color: var(--color-amber-200-60);
