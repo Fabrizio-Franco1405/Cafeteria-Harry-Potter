@@ -1,5 +1,5 @@
-@use './variables.scss';
-@use './mixin.scss';
+@use '../global/variables.scss';
+@use '../global/mixin.scss';
 @use '../common/beginning';
 @use '../common/menu';
 @use '../common/special';
