@@ -37,6 +37,9 @@
   --color-text-muted: var(--color-amber-200-60); /* Texto con menor énfasis, pies de página */
   /* Colores para placeholders */
   --color-placeholder: rgba(253, 230, 138, 0.4); /* Texto placeholder en inputs */
+  --icon-color: #fbbf24; /* Color del ícono */
+  --icon-bg-color: rgba(251, 191, 36, 0.1); /* Color de fondo del círculo con transparencia */
+  --icon-bg-color-hover: rgba(251, 191, 36, 0.2); /* Color de fondo del círculo en hover con más transparencia */
   --font-family-cinzel: "Cinzel", serif;
   --font-family-geist: "Geist", serif;
   --font-optical-sizing: auto;
@@ -339,6 +342,134 @@
   100% {
     transform: translateY(-15px);
   } /* Se mueve 10px hacia arriba */
+}
+[data-lucide] {
+  width: 24px;
+  height: 24px;
+  color: var(--icon-color); /* Usando la variable para el color del ícono */
+  vertical-align: middle;
+}
+
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--icon-bg-color); /* Usando la variable para el fondo del círculo */
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+.icon-circle:hover {
+  background-color: var(--icon-bg-color-hover); /* Usando la variable para el hover */
+}
+
+.location {
+  background-color: var(--color-bg-secondary);
+  width: 100%;
+  padding: 96px 0;
+}
+.location .container-mx-auto {
+  max-width: 1400px;
+  padding: 0 24px;
+  margin: auto;
+}
+.location .container-mx-auto .colums-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 1024px) {
+  .location .container-mx-auto .colums-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+.location .container-mx-auto .colums-grid .mapa-interactivo {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--color-bg-form-element);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+@media (min-width: 1024px) {
+  .location .container-mx-auto .colums-grid .mapa-interactivo {
+    min-height: auto;
+  }
+}
+.location .container-mx-auto .colums-grid .mapa-interactivo span {
+  font-family: var(--font-family-geist);
+  color: var(--icon-color);
+}
+.location .container-mx-auto .colums-grid .encuentranos {
+  padding-left: 0;
+  color: var(--color-text-primary);
+}
+@media (min-width: 1024px) {
+  .location .container-mx-auto .colums-grid .encuentranos {
+    padding-left: 48px;
+  }
+}
+.location .container-mx-auto .colums-grid .encuentranos h1 {
+  font-family: var(--font-family-cinzel);
+  font-size: var(--font-size-3xl);
+  margin-bottom: 32px;
+}
+.location .container-mx-auto .colums-grid .encuentranos .space {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.location .container-mx-auto .colums-grid .encuentranos #flex-items-start-1, .location .container-mx-auto .colums-grid .encuentranos .flex-items-start {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.location .container-mx-auto .colums-grid .encuentranos #flex-items-start-1 .text-container h2, .location .container-mx-auto .colums-grid .encuentranos .flex-items-start .text-container h2 {
+  font-family: var(--font-family-geist);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.location .container-mx-auto .colums-grid .encuentranos #flex-items-start-1 .text-container p, .location .container-mx-auto .colums-grid .encuentranos .flex-items-start .text-container p {
+  font-family: var(--font-family-geist);
+  font-size: 16px;
+  color: var(--color-amber-200-80);
+}
+.location .container-mx-auto .colums-grid .encuentranos #location-button {
+  background-color: var(--color-amber-400);
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  border-radius: 9999px;
+  border: none;
+  padding: 14px 32px;
+  margin-top: 48px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.location .container-mx-auto .colums-grid .encuentranos #location-button:hover {
+  background-color: var(--color-amber-300);
+}
+@media (max-width: 1024px) {
+  .location .colums-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 24px;
+  }
+  .location .colums-grid .mapa-interactivo {
+    grid-column: 1/-1;
+    width: 100%;
+    min-height: 200px;
+  }
+  .location .colums-grid .encuentranos {
+    grid-column: 1/-1;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

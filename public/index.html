@@ -7,6 +7,7 @@
     <meta name="description" content="Este es un proyecto de prueba para medir el conocimiento y desempeño de los contribuyentes y propietarios">
     <link rel="stylesheet" href="../src/style/css/main.css">
     <script type="module" src="../src/js/main.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
@@ -56,26 +57,41 @@
     </section>
 
     <section class="location"> 
-        <!--<div class="map"> 
-            <p>Mapa Interactivo</p> 
-        </div> 
-        <div class="info"> 
-            <h1>ENCUÉNTRANOS</h1> 
-            <div class="details"> 
-                <div class="detail"> 
-                    <h2>Ubicación</h2> 
-                    <p>Callejón Diagon #934<br>Ciudad Mágica, CM 28001</p> 
-                </div> <div class="detail"> 
-                    <h2>Horario</h2> 
-                    <p>Lunes a Viernes: 8:00 - 22:00<br>Sábado y Domingo: 9:00 - 23:00</p> 
-                </div> 
-                <div class="detail"> 
-                    <h2>Contacto</h2> 
-                    <p>Tel: (123) 456-7890<br>Email: info@cafemagico.com</p> 
-                </div> 
-            </div> 
-            <button class="btn">Cómo Llegar</button> 
-        </div>-->
+        <div class="container-mx-auto">
+            <div class="colums-grid">
+                <div class="mapa-interactivo">
+                    <span>Mapa Interactivo</span>
+                </div>
+                <div class="encuentranos">
+                    <h1>Encuéntranos</h1>
+                    <div class="space">
+                        <div id="flex-items-start-1">
+                            <span class="icon-circle"><i data-lucide="map-pin"></i></span>
+                            <div class="text-container">
+                                <h2>Ubicación</h2>
+                                <p>Callejón Diagon #934 <br> Ciudad Mágica, CM 28001</p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start">
+                            <span class="icon-circle"><i data-lucide="clock"></i></span>
+                            <div class="text-container">
+                                <h2>Horario</h2>
+                                <p>Lunes a Viernes: 8:00 - 22:00 <br> Sábado y Domingo: 9:00 - 23:00</p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start">
+                            <span class="icon-circle"><i data-lucide="phone"></i></span>
+                            <div class="text-container">
+                                <h2>Contacto</h2>
+                                <p>Tel: (123) 456-7890 <br> Email: info@cafemagico.com</p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start"></div>
+                    </div>
+                    <button id="location-button">Cómo Llegar</button>
+                </div>
+            </div>
+        </div>
     </section>
     
 </body>

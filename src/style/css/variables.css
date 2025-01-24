@@ -37,6 +37,9 @@
   --color-text-muted: var(--color-amber-200-60); /* Texto con menor énfasis, pies de página */
   /* Colores para placeholders */
   --color-placeholder: rgba(253, 230, 138, 0.4); /* Texto placeholder en inputs */
+  --icon-color: #fbbf24; /* Color del ícono */
+  --icon-bg-color: rgba(251, 191, 36, 0.1); /* Color de fondo del círculo con transparencia */
+  --icon-bg-color-hover: rgba(251, 191, 36, 0.2); /* Color de fondo del círculo en hover con más transparencia */
   --font-family-cinzel: "Cinzel", serif;
   --font-family-geist: "Geist", serif;
   --font-optical-sizing: auto;
