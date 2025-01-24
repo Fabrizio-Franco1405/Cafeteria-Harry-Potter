@@ -1,15 +1,18 @@
 // _special.scss
 @use '../variables.scss' as *;
 @use '../mixin.scss' as *;
+
 * {
     @include reset-tags;
 }
+
 [data-lucide] {
   width: 24px;
   height: 24px;
   color: var(--icon-color); /* Usando la variable para el color del ícono */
   vertical-align: middle;
 }
+
 .icon-circle {
   display: inline-flex;
   align-items: center;
@@ -20,27 +23,33 @@
   background-color: var(--icon-bg-color); /* Usando la variable para el fondo del círculo */
   margin-right: 8px;
   transition: background-color 0.3s ease;
+
   &:hover {
     background-color: var(--icon-bg-color-hover); /* Usando la variable para el hover */
   }
 }
+
 .special {
   background-color: var(--color-bg-secondary);
   width: 100%;
   padding: 96px 0;
+
   .container-mx-auto {
     max-width: 1400px;
     padding: 0 24px;
     margin: auto;
+
     .colums-grid {
       width: 100%;
       display: grid;
       grid-template-columns: 1fr;
       gap: 24px;
+
       @media (min-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
       }
+
       .special-img {
         position: relative;
         border-radius: 15px;
@@ -56,12 +65,14 @@
         @media (min-width: 1024px) {
           min-height: auto;
         }
+
         img {
             background-color: white;
             height: 100%;
             width: 100%;
             position: absolute;
         }
+
         .filter {
             width: 100%;
             height: 100%;
@@ -69,6 +80,7 @@
             position: absolute;
         }
       }
+
       .special-day {
         padding-left: 0;
         color: var(--color-text-primary);
@@ -77,6 +89,7 @@
         @media (min-width: 1024px) {
           padding-left: 48px;
         }
+
         h1 {
           font-family: var(--font-family-cinzel);
           font-size: var(--font-size-6xl);
@@ -97,16 +110,19 @@
             margin-bottom: 32px;
             margin-top: 20px;
         }
+
         .space {
           display: flex;
           flex-direction: column;
           gap: 24px;
         }
+
         #flex-items-start-1, .flex-items-start {
           display: flex;
           align-items: flex-start;
           align-items: center;
           gap: 16px;
+
           .text-container-special {
             p {
                 font-family: var(--font-family-geist);
@@ -115,12 +131,14 @@
                 margin: 0;
             }
           }
+
           .icon-circle {
             color: var(--icon-color);
             font-family: var(--font-family-geist);
             font-size: 0.95rem;
           }
         }
+
         .buttons {
           background-color: var(--color-amber-400);
           font-weight: var(--font-weight-regular);
@@ -131,6 +149,7 @@
           margin-top: 48px;
           cursor: pointer;
           transition: background-color 0.3s ease;
+
           &:hover {
             background-color: var(--color-amber-300);
           }
@@ -138,16 +157,19 @@
       }
     }
   }
+
   @media (max-width: 1024px) {
     .colums-grid {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       row-gap: 24px;
+
       .mapa-interactivo {
         grid-column: 1 / -1;
         width: 100%;
         min-height: 200px;
       }
+
       .encuentranos {
         grid-column: 1 / -1;
         width: 100%;
