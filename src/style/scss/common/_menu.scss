@@ -1,5 +1,5 @@
-@use '../global/variables.scss' as *;
-@use '../global/mixin.scss' as *;
+@use '../variables.scss' as *;
+@use '../mixin.scss' as *;
 
 body {
     background: var(--color-gradient-body);
