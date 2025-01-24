@@ -1,1 +1,2 @@
-import './beginning';
+import './beginning.js';
+import './location.js';

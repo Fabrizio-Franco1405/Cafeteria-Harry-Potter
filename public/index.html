@@ -7,6 +7,7 @@
     <meta name="description" content="Este es un proyecto de prueba para medir el conocimiento y desempeño de los contribuyentes y propietarios">
     <link rel="stylesheet" href="../src/style/css/main.css">
     <script type="module" src="../src/js/main.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
@@ -14,17 +15,18 @@
 </head>
 <body>
     <header class="header"> 
-        <nav class="container"> 
-            <div class="nav-content"> 
-                <div class="logo">Café Mágico</div> 
-                <div class="nav-items"> 
-                    <a href="#inicio" class="nav-link">Inicio</a> 
-                    <a href="#menu" class="nav-link">Menú</a> 
-                    <a href="#especiales" class="nav-link">Especiales</a> 
-                    <a href="#ubicacion" class="nav-link">Ubicación</a> 
-                    <button class="nav-button">Reservar</button> 
-                </div> 
-                <button class="menu-toggle"> <span class="icon-menu"></span> </button> 
+        <!--
+            <nav class="container"> 
+                <div class="nav-content"> 
+                    <div class="logo">Café Mágico</div> 
+                    <div class="nav-items"> 
+                        <a href="#inicio" class="nav-link">Inicio</a> 
+                        <a href="#menu" class="nav-link">Menú</a> 
+                        <a href="#especiales" class="nav-link">Especiales</a> 
+                        <a href="#ubicacion" class="nav-link">Ubicación</a> 
+                        <button class="nav-button">Reservar</button> 
+                    </div> 
+                    <button class="menu-toggle"> <span class="icon-menu"></span> </button> 
             </div> 
             <div class="mobile-nav"> <a href="#inicio" class="mobile-nav-link">Inicio</a> 
                 <a href="#menu" class="mobile-nav-link">Menú</a> 
@@ -33,6 +35,7 @@
                 <button class="mobile-nav-button">Reservar</button> 
             </div> 
         </nav>
+        -->
     </header>
   
     <section id="beginnig">
@@ -52,28 +55,43 @@
         </div>-->
     </section>
 
-    <section class="location"> 
-        <!--<div class="map"> 
-            <p>Mapa Interactivo</p> 
-        </div> 
-        <div class="info"> 
-            <h1>ENCUÉNTRANOS</h1> 
-            <div class="details"> 
-                <div class="detail"> 
-                    <h2>Ubicación</h2> 
-                    <p>Callejón Diagon #934<br>Ciudad Mágica, CM 28001</p> 
-                </div> <div class="detail"> 
-                    <h2>Horario</h2> 
-                    <p>Lunes a Viernes: 8:00 - 22:00<br>Sábado y Domingo: 9:00 - 23:00</p> 
-                </div> 
-                <div class="detail"> 
-                    <h2>Contacto</h2> 
-                    <p>Tel: (123) 456-7890<br>Email: info@cafemagico.com</p> 
-                </div> 
-            </div> 
-            <button class="btn">Cómo Llegar</button> 
-        </div>-->
+    <section class="location special">
+        <div class="container-mx-auto">
+            <div class="colums-grid">
+                <div class="special-img">
+                    <img src="#" alt="">
+                    <div class="filter"></div>
+                </div>
+                <div class="special-day">
+                    <h3 class="pretitle">Especial del Día</h3>
+                    <h1 class="title">Felix Felicis</h1>
+                    <h2>Poción de la Suerte Líquida</h2>
+                    <p>Prueba nuestra bebida especial inspirada en la famosa poción de la suerte. Una mezcla única de cítricos, hierbas doradas y un toque de magia que te hará sentir afortunado. ¡Disponible por tiempo limitado!</p>
+                    <div class="space">
+                        <div id="flex-items-start-1">
+                            <span class="icon-circle">01</span>
+                            <div class="text-container-special">
+                                <p>Preparado con ingredientes mágicos seleccionados</p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start">
+                            <span class="icon-circle">02</span>
+                            <div class="text-container-special">
+                                <p>Preparado con ingredientes mágicos seleccionados</p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start">
+                            <span class="icon-circle">03</span>
+                            <div class="text-container-special">
+                                <p>Cantidad limitada diaria</p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start"></div>
+                    </div>
+                    <button id="order-now-button">Ordenar Ahora</button>
+                </div>
+            </div>
+        </div>
     </section>
-    
 </body>
 </html>
