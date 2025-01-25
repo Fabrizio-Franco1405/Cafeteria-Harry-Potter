@@ -35,7 +35,6 @@
   --color-text-secondary: var(--color-amber-200); /* Texto secundario, párrafos */
   --color-text-accent: var(--color-amber-400); /* Texto destacado, enlaces */
   --color-text-muted: var(--color-amber-200-60); /* Texto con menor énfasis, pies de página */
-  --color-gradient-body: linear-gradient(180deg, rgba(28,28,28, 1) 0%, rgba(44,24,16,1) 100%); /* Background Color Body */
   /* Colores para placeholders */
   --color-placeholder: rgba(253, 230, 138, 0.4); /* Texto placeholder en inputs */
   --icon-color: #fbbf24; /* Color del ícono */
