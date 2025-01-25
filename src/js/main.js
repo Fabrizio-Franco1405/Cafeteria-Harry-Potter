@@ -1,2 +1,2 @@
 import './beginning.js';
-import './location.js';
+import './icons-global.js';
