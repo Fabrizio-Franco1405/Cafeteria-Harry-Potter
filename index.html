@@ -7,17 +7,17 @@
     <meta name="author" content="Fabrizio Franco, Carlos Pineda" />
     <meta name="description"
         content="Este es un proyecto de prueba para medir el conocimiento y desempeño de los contribuyentes y propietarios" />
-    <link rel="stylesheet" href="../src/style/css/main.css" />
-    <script type="module" src="../src/js/main.js"></script>
+    <link rel="stylesheet" href="./src/style/css/main.css" />
+    <script type="module" src="./src/js/main.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Geist:wght@100..900&display=swap"
         rel="stylesheet" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../src/assets/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/icon/favicon-16x16.png">
-    <link rel="manifest" href="../src/assets/icon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="./src/assets/icon/site.webmanifest">
     <title>Cafetería Harry Potter ☕</title>
 </head>
 
@@ -26,6 +26,7 @@
         <nav class="container">
             <div class="nav-content">
                 <div class="logo">Café Mágico</div>
+                
                 <div class="nav-items">
                     <a href="#beginnig" class="nav-link">Inicio</a>
                     <a href="#section-menu" class="nav-link">Menú</a>
@@ -33,9 +34,13 @@
                     <a href="#location-section" class="nav-link">Ubicación</a>
                     <button class="nav-button">Reservar</button>
                 </div>
-                <button class="menu-toggle"><span class="icon-menu"></span></button>
+                <button class="menu-toggle" id="burguer-button"><i data-lucide="align-justify"></i></button>
             </div>
             <div class="mobile-nav">
+                <div class="header-nav-menu-mobil">
+                    <div class="logo">Café Mágico</div>
+                    <button class="menu-toggle" id="close-button"><i data-lucide="x"></i></button>
+                </div>
                 <a href="#beginnig" class="mobile-nav-link">Inicio</a>
                 <a href="#section-menu" class="mobile-nav-link">Menú</a>
                 <a href="#special-day" class="mobile-nav-link">Especiales</a>
@@ -82,7 +87,7 @@
                 <div class="card">
                     <div class="img-container">
                         <img class="card-image"
-                            src="../src/assets/img/menu-batido.webp"
+                            src="./src/assets/img/menu-batido.webp"
                             alt="Imagen del producto" />
                         <div class="filter"></div>
                     </div>
@@ -100,7 +105,7 @@
                 <div class="card">
                     <div class="img-container">
                         <img class="card-image"
-                            src="../src/assets/img/menu-cerveza.webp"
+                            src="./src/assets/img/menu-cerveza.webp"
                             alt="Imagen del producto" />
                         <div class="filter"></div>
                     </div>
@@ -118,7 +123,7 @@
                 <div class="card">
                     <div class="img-container">
                         <img class="card-image"
-                            src="../src/assets/img/menu-pie.webp"
+                            src="./src/assets/img/menu-pie.webp"
                             alt="Imagen del producto" />
                         <div class="filter"></div>
                     </div>
@@ -136,7 +141,7 @@
                 <div class="card">
                     <div class="img-container">
                         <img class="card-image"
-                            src="../src/assets/img/menu-rana.webp"
+                            src="./src/assets/img/menu-rana.webp"
                             alt="Imagen del producto" />
                         <div class="filter"></div>
                     </div>
@@ -162,7 +167,7 @@
         <div class="container-mx-auto">
             <div class="colums-grid">
                 <div class="special-img">
-                    <img src="../src/assets/img/special-bottle-felix-felicis.webp" alt="" />
+                    <img src="./src/assets/img/special-bottle-felix-felicis.webp" alt="" />
                     <div class="filter"></div>
                 </div>
                 <div class="special-day">
