@@ -1,79 +1,313 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Fabrizio Franco, Carlos Pineda">
-    <meta name="description" content="Este es un proyecto de prueba para medir el conocimiento y desempeño de los contribuyentes y propietarios">
-    <link rel="stylesheet" href="../src/style/css/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fabrizio Franco, Carlos Pineda" />
+    <meta name="description"
+        content="Este es un proyecto de prueba para medir el conocimiento y desempeño de los contribuyentes y propietarios" />
+    <link rel="stylesheet" href="../src/style/css/main.css" />
     <script type="module" src="../src/js/main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Geist:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="../src/assets/icon/site.webmanifest">
     <title>Cafetería Harry Potter ☕</title>
 </head>
+
 <body>
-    <header class="header"> 
-        <nav class="container"> 
-            <div class="nav-content"> 
-                <div class="logo">Café Mágico</div> 
-                <div class="nav-items"> 
-                    <a href="#inicio" class="nav-link">Inicio</a> 
-                    <a href="#menu" class="nav-link">Menú</a> 
-                    <a href="#especiales" class="nav-link">Especiales</a> 
-                    <a href="#ubicacion" class="nav-link">Ubicación</a> 
-                    <button class="nav-button">Reservar</button> 
-                </div> 
-                <button class="menu-toggle"> <span class="icon-menu"></span> </button> 
-            </div> 
-            <div class="mobile-nav"> <a href="#inicio" class="mobile-nav-link">Inicio</a> 
-                <a href="#menu" class="mobile-nav-link">Menú</a> 
-                <a href="#especiales" class="mobile-nav-link">Especiales</a> 
-                <a href="#ubicacion" class="mobile-nav-link">Ubicación</a> 
-                <button class="mobile-nav-button">Reservar</button> 
-            </div> 
+    <header class="header">
+        <nav class="container">
+            <div class="nav-content">
+                <div class="logo">Café Mágico</div>
+                <div class="nav-items">
+                    <a href="#beginnig" class="nav-link">Inicio</a>
+                    <a href="#section-menu" class="nav-link">Menú</a>
+                    <a href="#special-day" class="nav-link">Especiales</a>
+                    <a href="#location-section" class="nav-link">Ubicación</a>
+                    <button class="nav-button">Reservar</button>
+                </div>
+                <button class="menu-toggle"><span class="icon-menu"></span></button>
+            </div>
+            <div class="mobile-nav">
+                <a href="#beginnig" class="mobile-nav-link">Inicio</a>
+                <a href="#section-menu" class="mobile-nav-link">Menú</a>
+                <a href="#special-day" class="mobile-nav-link">Especiales</a>
+                <a href="#location-section" class="mobile-nav-link">Ubicación</a>
+                <button class="mobile-nav-button">Reservar</button>
+            </div>
         </nav>
     </header>
-  
+
     <section id="beginnig">
-        <!--<div id="filter-shadow"></div>
+        <div id="filter-shadow"></div>
         <div id="container-beginning">
-            <h4 >UNA EXPERIENCIA MÁGICA</h4>
-            <h1 id="slogan">Donde la Magia Cobra Vida</h1>
-            <h3>Sumérgete en un mundo de sabores mágicos y experiencias únicas inspiradas en el universo de Harry Potter</h3>
-            <div id="container-buttons-beginning">
-                <button type="button" id="button-view-menu" class="buttons">Ver Menú Mágico</button>
-                <button type="button" id="button-reserve-table" class="buttons">Reservar Mesa</button>
+            <div id="container-content-beginning">
+                <h4 class="pretitle"><span class="icon-sparkles"><i data-lucide="sparkles"></i></span>UNA EXPERIENCIA MÁGICA<span class="icon-sparkles"><i data-lucide="sparkles"></i></span></h4>
+                <h1 id="slogan">Donde la Magia Cobra Vida</h1>
+                <h3>
+                    Sumérgete en un mundo de sabores mágicos y experiencias únicas
+                    inspiradas en el universo de Harry Potter
+                </h3>
+                <div id="container-buttons-beginning">
+                    <button type="button" id="button-view-menu" class="buttons">
+                        Ver Menú Mágico
+                    </button>
+                    <button type="button" id="button-reserve-table" class="buttons">
+                        Reservar Mesa
+                    </button>
+                </div>
             </div>
         </div>
         <div id="container-discover">
             <h3>Descubre Más</h3>
             <div id="arrow-discover"></div>
-        </div>-->
+        </div>
     </section>
 
-    <section class="location"> 
-        <!--<div class="map"> 
-            <p>Mapa Interactivo</p> 
-        </div> 
-        <div class="info"> 
-            <h1>ENCUÉNTRANOS</h1> 
-            <div class="details"> 
-                <div class="detail"> 
-                    <h2>Ubicación</h2> 
-                    <p>Callejón Diagon #934<br>Ciudad Mágica, CM 28001</p> 
-                </div> <div class="detail"> 
-                    <h2>Horario</h2> 
-                    <p>Lunes a Viernes: 8:00 - 22:00<br>Sábado y Domingo: 9:00 - 23:00</p> 
-                </div> 
-                <div class="detail"> 
-                    <h2>Contacto</h2> 
-                    <p>Tel: (123) 456-7890<br>Email: info@cafemagico.com</p> 
-                </div> 
-            </div> 
-            <button class="btn">Cómo Llegar</button> 
-        </div>-->
+    <section id="section-menu" class="section-content">
+        <div id="container-menu-content">
+            <div id="menu-title">
+                <h4 class="pretitle"><span class="icon-sparkles"><i data-lucide="sparkles"></i></span>NUESTRAS ESPECIALIDADES<span class="icon-sparkles"><i data-lucide="sparkles"></i></span></h4>
+                <h1 class="title-section">Menú Mágico</h1>
+            </div>
+
+            <div id="cards-container-menu">
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-image"
+                            src="../src/assets/img/menu-batido.webp"
+                            alt="Imagen del producto" />
+                        <div class="filter"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="name-price-line">
+                            <h3>Poción de Amor</h3>
+                            <p>$8.50</p>
+                        </div>
+                        <p class="card-description">
+                            Smoothie de fresa y vainilla con un toque de magia rosa
+                        </p>
+                        <p class="category">Bebida</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-image"
+                            src="../src/assets/img/menu-cerveza.webp"
+                            alt="Imagen del producto" />
+                        <div class="filter"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="name-price-line">
+                            <h3>Cerveza de Mantequilla</h3>
+                            <p>$7.50</p>
+                        </div>
+                        <p class="card-description">
+                            Nuestra versión especial de la famosa bebida de Hogsmeade
+                        </p>
+                        <p class="category">Bebida</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-image"
+                            src="../src/assets/img/menu-pie.webp"
+                            alt="Imagen del producto" />
+                        <div class="filter"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="name-price-line">
+                            <h3>Pastel de Calabaza</h3>
+                            <p>$6.50</p>
+                        </div>
+                        <p class="card-description">
+                            Receta tradicional de Hogwarts con especias mágicas
+                        </p>
+                        <p class="category">Postres</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-image"
+                            src="../src/assets/img/menu-rana.webp"
+                            alt="Imagen del producto" />
+                        <div class="filter"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="name-price-line">
+                            <h3>Rana de Chocolate</h3>
+                            <p>$5.50</p>
+                        </div>
+                        <p class="card-description">
+                            ¡Cada una viene con una tarjeta de mago coleccionable!
+                        </p>
+                        <p class="category">Postres</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="buttons" id="button-view-menu">
+                Ver Menú Completo
+            </button>
+        </div>
     </section>
-    
+
+    <section id="special-day" class="special location">
+        <div class="container-mx-auto">
+            <div class="colums-grid">
+                <div class="special-img">
+                    <img src="../src/assets/img/special-bottle-felix-felicis.webp" alt="" />
+                    <div class="filter"></div>
+                </div>
+                <div class="special-day">
+                    <h3 class="pretitle"><span class="icon-magic-wand"><i data-lucide="wand-sparkles"></i></span>ESPECIAL DEL DÍA</h3>
+                    <h1 class="title-section">Felix Felicis</h1>
+                    <h2>Poción de la Suerte Líquida</h2>
+                    <p>
+                        Prueba nuestra bebida especial inspirada en la famosa poción de la
+                        suerte. Una mezcla única de cítricos, hierbas doradas y un toque
+                        de magia que te hará sentir afortunado. ¡Disponible por tiempo
+                        limitado!
+                    </p>
+                    <div class="space">
+                        <div id="flex-items-start-1">
+                            <span class="icon-circle">01</span>
+                            <div class="text-container-special">
+                                <p>Preparado con ingredientes mágicos seleccionados</p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start">
+                            <span class="icon-circle">02</span>
+                            <div class="text-container-special">
+                                <p>Servido en un vial mágico para llevar</p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start">
+                            <span class="icon-circle">03</span>
+                            <div class="text-container-special">
+                                <p>Cantidad limitada diaria</p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start"></div>
+                    </div>
+                    <button id="order-now-button" class="buttons">Ordenar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location" id="location-section">
+        <div class="container-mx-auto">
+            <div class="colums-grid">
+                <div class="mapa-interactivo">
+                    <iframe src="https://mapgenie.io/hogwarts-legacy/maps/hogwarts?embed=light"></iframe> <!--height="100%" style="position: relative; width: 100%;"-->
+                </div>
+                <div class="encuentranos">
+                    <h1 class="title-section">Encuéntranos</h1>
+                    <div class="space">
+                        <div id="flex-items-start-1">
+                            <span class="icon-circle"><i data-lucide="map-pin"></i></span>
+                            <div class="text-container">
+                                <h2>Ubicación</h2>
+                                <p>
+                                    Callejón Diagon #934 <br />
+                                    Ciudad Mágica, CM 28001
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start">
+                            <span class="icon-circle"><i data-lucide="clock"></i></span>
+                            <div class="text-container">
+                                <h2>Horario</h2>
+                                <p>
+                                    Lunes a Viernes: 8:00 - 22:00 <br />
+                                    Sábado y Domingo: 9:00 - 23:00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start">
+                            <span class="icon-circle"><i data-lucide="phone"></i></span>
+                            <div class="text-container">
+                                <h2>Contacto</h2>
+                                <p>
+                                    Tel: (123) 456-7890 <br />
+                                    Email: info@cafemagico.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-items-start"></div>
+                    </div>
+                    <button id="location-button">Cómo Llegar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h3 class="footer__title">Café Mágico</h3>
+                    <p class="footer__text">
+                        Donde la magia cobra vida en cada taza y la experiencia va más
+                        allá de lo ordinario.
+                    </p>
+                    <div class="footer__social-icons">
+                        <a href="#" class="footer__social-icon"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="footer__social-icon"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="footer__social-icon"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__subtitle">Enlaces Rápidos</h4>
+                    <nav class="footer__links">
+                        <a href="#inicio" class="footer__link">Inicio</a>
+                        <a href="#menu" class="footer__link">Menú</a>
+                        <a href="#especiales" class="footer__link">Especiales</a>
+                        <a href="#ubicacion" class="footer__link">Ubicación</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__subtitle">Contacto</h4>
+                    <div class="footer__info">
+                        <p>Callejón Diagon #934</p>
+                        <p>Ciudad Mágica, CM 28001</p>
+                        <p>Tel: (123) 456-7890</p>
+                        <p>Email: info@cafemagico.com</p>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__subtitle">Boletín Mágico</h4>
+                    <p class="footer__text">
+                        Suscríbete para recibir noticias sobre eventos especiales y
+                        promociones mágicas.
+                    </p>
+                    <form class="footer__newsletter-form">
+                        <input type="email" placeholder="Tu email" class="footer__newsletter-input" />
+                        <button type="submit" class="footer__newsletter-button">
+                            Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; <span id="current-year"></span>2025 Café Mágico. Todos los
+                    derechos reservados. 
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

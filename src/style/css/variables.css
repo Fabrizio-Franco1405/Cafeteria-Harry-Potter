@@ -29,6 +29,7 @@
     var(--color-bg-primary)
   ); /* Overlay del hero section */
   --color-gradient-image-overlay: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent); /* Overlay en imágenes */
+  --color-gradient-body: linear-gradient(180deg, rgba(28,28,28, 1) 0%, rgba(44,24,16,1) 100%); /* Background Color Body */
   /* Colores para texto */
   --color-text-primary: var(--color-amber-100); /* Texto principal, títulos importantes */
   --color-text-secondary: var(--color-amber-200); /* Texto secundario, párrafos */
@@ -36,6 +37,9 @@
   --color-text-muted: var(--color-amber-200-60); /* Texto con menor énfasis, pies de página */
   /* Colores para placeholders */
   --color-placeholder: rgba(253, 230, 138, 0.4); /* Texto placeholder en inputs */
+  --icon-color: #fbbf24; /* Color del ícono */
+  --icon-bg-color: rgba(251, 191, 36, 0.1); /* Color de fondo del círculo con transparencia */
+  --icon-bg-color-hover: rgba(251, 191, 36, 0.2); /* Color de fondo del círculo en hover con más transparencia */
   --font-family-cinzel: "Cinzel", serif;
   --font-family-geist: "Geist", serif;
   --font-optical-sizing: auto;
@@ -56,3 +60,5 @@
   --font-size-6xl: 3.75rem; /* 60px */
   --font-size-7xl: 4.5rem; /* 72px */
 }
+
+/*# sourceMappingURL=variables.css.map */
