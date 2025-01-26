@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Geist:wght@100..900&display=swap"
         rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="../src/assets/icon/site.webmanifest">
     <title>Cafetería Harry Potter ☕</title>
 </head>
 
@@ -25,17 +29,17 @@
                 <div class="nav-items">
                     <a href="#beginnig" class="nav-link">Inicio</a>
                     <a href="#section-menu" class="nav-link">Menú</a>
-                    <a href="#especiales" class="nav-link">Especiales</a>
-                    <a href="#ubicacion" class="nav-link">Ubicación</a>
+                    <a href="#special-day" class="nav-link">Especiales</a>
+                    <a href="#location-section" class="nav-link">Ubicación</a>
                     <button class="nav-button">Reservar</button>
                 </div>
                 <button class="menu-toggle"><span class="icon-menu"></span></button>
             </div>
             <div class="mobile-nav">
-                <a href="#inicio" class="mobile-nav-link">Inicio</a>
-                <a href="#menu" class="mobile-nav-link">Menú</a>
-                <a href="#especiales" class="mobile-nav-link">Especiales</a>
-                <a href="#ubicacion" class="mobile-nav-link">Ubicación</a>
+                <a href="#beginnig" class="mobile-nav-link">Inicio</a>
+                <a href="#section-menu" class="mobile-nav-link">Menú</a>
+                <a href="#special-day" class="mobile-nav-link">Especiales</a>
+                <a href="#location-section" class="mobile-nav-link">Ubicación</a>
                 <button class="mobile-nav-button">Reservar</button>
             </div>
         </nav>
@@ -45,7 +49,7 @@
         <div id="filter-shadow"></div>
         <div id="container-beginning">
             <div id="container-content-beginning">
-                <h4>UNA EXPERIENCIA MÁGICA</h4>
+                <h4 class="pretitle"><span class="icon-sparkles"><i data-lucide="sparkles"></i></span>UNA EXPERIENCIA MÁGICA<span class="icon-sparkles"><i data-lucide="sparkles"></i></span></h4>
                 <h1 id="slogan">Donde la Magia Cobra Vida</h1>
                 <h3>
                     Sumérgete en un mundo de sabores mágicos y experiencias únicas
@@ -70,7 +74,7 @@
     <section id="section-menu" class="section-content">
         <div id="container-menu-content">
             <div id="menu-title">
-                <h4 class="pretitle">NUESTRAS ESPECIALIDADES</h4>
+                <h4 class="pretitle"><span class="icon-sparkles"><i data-lucide="sparkles"></i></span>NUESTRAS ESPECIALIDADES<span class="icon-sparkles"><i data-lucide="sparkles"></i></span></h4>
                 <h1 class="title-section">Menú Mágico</h1>
             </div>
 
@@ -78,7 +82,7 @@
                 <div class="card">
                     <div class="img-container">
                         <img class="card-image"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunflower_from_Silesia2.jpg/800px-Sunflower_from_Silesia2.jpg"
+                            src="../src/assets/img/menu-batido.webp"
                             alt="Imagen del producto" />
                         <div class="filter"></div>
                     </div>
@@ -96,7 +100,7 @@
                 <div class="card">
                     <div class="img-container">
                         <img class="card-image"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunflower_from_Silesia2.jpg/800px-Sunflower_from_Silesia2.jpg"
+                            src="../src/assets/img/menu-cerveza.webp"
                             alt="Imagen del producto" />
                         <div class="filter"></div>
                     </div>
@@ -114,7 +118,7 @@
                 <div class="card">
                     <div class="img-container">
                         <img class="card-image"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunflower_from_Silesia2.jpg/800px-Sunflower_from_Silesia2.jpg"
+                            src="../src/assets/img/menu-pie.webp"
                             alt="Imagen del producto" />
                         <div class="filter"></div>
                     </div>
@@ -132,7 +136,7 @@
                 <div class="card">
                     <div class="img-container">
                         <img class="card-image"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunflower_from_Silesia2.jpg/800px-Sunflower_from_Silesia2.jpg"
+                            src="../src/assets/img/menu-rana.webp"
                             alt="Imagen del producto" />
                         <div class="filter"></div>
                     </div>
@@ -154,16 +158,16 @@
         </div>
     </section>
 
-    <section class="special location">
+    <section id="special-day" class="special location">
         <div class="container-mx-auto">
             <div class="colums-grid">
                 <div class="special-img">
-                    <img src="#" alt="" />
+                    <img src="../src/assets/img/special-bottle-felix-felicis.webp" alt="" />
                     <div class="filter"></div>
                 </div>
                 <div class="special-day">
-                    <h3 class="pretitle">Especial del Día</h3>
-                    <h1 class="title">Felix Felicis</h1>
+                    <h3 class="pretitle"><span class="icon-magic-wand"><i data-lucide="wand-sparkles"></i></span>ESPECIAL DEL DÍA</h3>
+                    <h1 class="title-section">Felix Felicis</h1>
                     <h2>Poción de la Suerte Líquida</h2>
                     <p>
                         Prueba nuestra bebida especial inspirada en la famosa poción de la
@@ -198,14 +202,14 @@
         </div>
     </section>
 
-    <section class="location">
+    <section class="location" id="location-section">
         <div class="container-mx-auto">
             <div class="colums-grid">
                 <div class="mapa-interactivo">
                     <span>Mapa Interactivo</span>
                 </div>
                 <div class="encuentranos">
-                    <h1>Encuéntranos</h1>
+                    <h1 class="title-section">Encuéntranos</h1>
                     <div class="space">
                         <div id="flex-items-start-1">
                             <span class="icon-circle"><i data-lucide="map-pin"></i></span>
@@ -245,7 +249,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__container">
             <div class="footer__grid">
                 <div class="footer__column">
@@ -298,8 +302,8 @@
 
             <div class="footer__bottom">
                 <p class="footer__copyright">
-                    &copy; <span id="current-year"></span> Café Mágico. Todos los
-                    derechos reservados.
+                    &copy; <span id="current-year"></span>2025 Café Mágico. Todos los
+                    derechos reservados. 
                 </p>
             </div>
         </div>

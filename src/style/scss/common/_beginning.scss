@@ -143,9 +143,7 @@
     
     @include flex-center;
     height: 100vh;
-    background: url("../../assets/img/images.webp") no-repeat center center/cover;
-    //background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunflower_from_Silesia2.jpg/800px-Sunflower_from_Silesia2.jpg") no-repeat center center/cover;
-    background: url("../../assets/img/image (39).webp") no-repeat center center/cover;
+    background: url("../../assets/img/bg-beginning.webp") no-repeat center center/cover;
     position: relative;
 
     #filter-shadow {
@@ -182,12 +180,6 @@
             & > * {
                 max-width: 768px;
                 margin-bottom: 24px;
-            }
-
-            h4 {
-                font-size: 0.95rem;
-                color: var(--color-amber-400);
-                font-family: var(--font-family-geist);
             }
             
             h1 {

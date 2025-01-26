@@ -133,20 +133,37 @@ body {
 
 
 .pretitle {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     color: var(--color-amber-400);
     font-family: var(--font-family-geist);
+    margin-bottom: 1rem;
+
+    @media (max-width: 400px) {
+        font-size: var(--font-size-sm);
+    }
+
+    .icon-sparkles {
+        padding: 0 10px;
+        height: 20px;
+        aspect-ratio: 1;
+    }
 }
 
 .title-section {
-    font-size: 3.25rem;
-    font-weight: 500;
+    font-weight: 400;
     font-family: var(--font-family-cinzel);
-    color: var(--color-amber-100);
     line-height: 70px;
+    font-size: 3.25rem;
+    color: var(--color-amber-100);
     
     @media (max-width: 768px) {
         font-size: 2.5rem;
+        margin-top: 0.75rem;
+        line-height: 55px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 2.25rem;
         margin-top: 0.75rem;
         line-height: 55px;
     }
