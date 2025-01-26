@@ -138,6 +138,10 @@ body {
     font-family: var(--font-family-geist);
     margin-bottom: 1rem;
 
+    @media (max-width: 400px) {
+        font-size: var(--font-size-sm);
+    }
+
     .icon-sparkles {
         padding: 0 10px;
         height: 20px;
@@ -151,7 +155,7 @@ body {
     line-height: 70px;
     font-size: 3.25rem;
     color: var(--color-amber-100);
-   
+    
     @media (max-width: 768px) {
         font-size: 2.5rem;
         margin-top: 0.75rem;

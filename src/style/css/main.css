@@ -457,6 +457,11 @@ body {
   font-family: var(--font-family-geist);
   margin-bottom: 1rem;
 }
+@media (max-width: 400px) {
+  .pretitle {
+    font-size: var(--font-size-sm);
+  }
+}
 .pretitle .icon-sparkles {
   padding: 0 10px;
   height: 20px;
@@ -585,6 +590,17 @@ body {
   line-height: 4.5rem;
   margin-top: 15px;
 }
+@media (max-width: 768px) {
+  .special .container-mx-auto .colums-grid .special-day h1 {
+    line-height: 3.5rem;
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .special .container-mx-auto .colums-grid .special-day h1 {
+    font-size: 2.25rem;
+  }
+}
 .special .container-mx-auto .colums-grid .special-day .icon-magic-wand {
   margin-right: 0.8rem;
 }
@@ -592,6 +608,12 @@ body {
   font-family: var(--font-family-cinzel);
   color: var(--icon-color);
   font-weight: 100;
+}
+@media (max-width: 400px) {
+  .special .container-mx-auto .colums-grid .special-day h2 {
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+  }
 }
 .special .container-mx-auto .colums-grid .special-day p {
   font-family: var(--font-family-geist);
@@ -621,6 +643,7 @@ body {
   color: var(--icon-color);
   font-family: var(--font-family-geist);
   font-size: 0.95rem;
+  aspect-ratio: 1;
 }
 @media (max-width: 1024px) {
   .special .colums-grid {
@@ -716,6 +739,16 @@ body {
   font-size: 3.25rem;
   font-weight: 500;
   margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .location .container-mx-auto .colums-grid .encuentranos h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .location .container-mx-auto .colums-grid .encuentranos h1 {
+    font-size: 2.25rem;
+  }
 }
 .location .container-mx-auto .colums-grid .encuentranos .space {
   display: flex;
