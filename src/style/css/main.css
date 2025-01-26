@@ -721,9 +721,12 @@ body {
     min-height: auto;
   }
 }
-.location .container-mx-auto .colums-grid .mapa-interactivo span {
-  font-family: var(--font-family-geist);
-  color: var(--icon-color);
+.location .container-mx-auto .colums-grid .mapa-interactivo iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 .location .container-mx-auto .colums-grid .encuentranos {
   padding-left: 0;
