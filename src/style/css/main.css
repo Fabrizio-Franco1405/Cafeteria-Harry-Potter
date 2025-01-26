@@ -458,7 +458,7 @@ body {
   margin-bottom: 1rem;
 }
 .pretitle .icon-sparkles {
-  padding: 0 12px;
+  padding: 0 10px;
   height: 20px;
   aspect-ratio: 1;
 }
@@ -473,6 +473,13 @@ body {
 @media (max-width: 768px) {
   .title-section {
     font-size: 2.5rem;
+    margin-top: 0.75rem;
+    line-height: 55px;
+  }
+}
+@media (max-width: 400px) {
+  .title-section {
+    font-size: 2.25rem;
     margin-top: 0.75rem;
     line-height: 55px;
   }
