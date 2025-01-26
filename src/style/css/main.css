@@ -187,8 +187,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url("../../assets/img/images.webp") no-repeat center center/cover;
-  background: url("../../assets/img/image (39).webp") no-repeat center center/cover;
+  background: url("../../assets/img/bg-beginning.webp") no-repeat center center/cover;
   position: relative;
 }
 #beginnig #filter-shadow {
@@ -227,11 +226,6 @@
 #beginnig #container-beginning #container-content-beginning > * {
   max-width: 768px;
   margin-bottom: 24px;
-}
-#beginnig #container-beginning #container-content-beginning h4 {
-  font-size: 0.95rem;
-  color: var(--color-amber-400);
-  font-family: var(--font-family-geist);
 }
 #beginnig #container-beginning #container-content-beginning h1 {
   font-size: 4.25rem;
@@ -458,17 +452,23 @@ body {
 }
 
 .pretitle {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   color: var(--color-amber-400);
   font-family: var(--font-family-geist);
+  margin-bottom: 1rem;
+}
+.pretitle .icon-sparkles {
+  padding: 0 12px;
+  height: 20px;
+  aspect-ratio: 1;
 }
 
 .title-section {
-  font-size: 3.25rem;
-  font-weight: 500;
+  font-weight: 400;
   font-family: var(--font-family-cinzel);
-  color: var(--color-amber-100);
   line-height: 70px;
+  font-size: 3.25rem;
+  color: var(--color-amber-100);
 }
 @media (max-width: 768px) {
   .title-section {
@@ -544,11 +544,16 @@ body {
     min-height: auto;
   }
 }
+.special .container-mx-auto .colums-grid .special-img:hover img {
+  transform: scale(1.08);
+}
 .special .container-mx-auto .colums-grid .special-img img {
   background-color: white;
   height: 100%;
   width: 100%;
   position: absolute;
+  transform: scale(1);
+  transition: transform 0.3s ease;
 }
 .special .container-mx-auto .colums-grid .special-img .filter {
   width: 100%;
@@ -573,6 +578,9 @@ body {
   line-height: 4.5rem;
   margin-top: 15px;
 }
+.special .container-mx-auto .colums-grid .special-day .icon-magic-wand {
+  margin-right: 0.8rem;
+}
 .special .container-mx-auto .colums-grid .special-day h2 {
   font-family: var(--font-family-cinzel);
   color: var(--icon-color);
@@ -580,6 +588,7 @@ body {
 }
 .special .container-mx-auto .colums-grid .special-day p {
   font-family: var(--font-family-geist);
+  color: var(--color-amber-200-80);
   line-height: 1.75rem;
   margin-bottom: 32px;
   margin-top: 20px;
@@ -605,20 +614,6 @@ body {
   color: var(--icon-color);
   font-family: var(--font-family-geist);
   font-size: 0.95rem;
-}
-.special .container-mx-auto .colums-grid .special-day .buttons {
-  background-color: var(--color-amber-400);
-  font-weight: var(--font-weight-regular);
-  font-size: 16px;
-  border-radius: 9999px;
-  border: none;
-  padding: 14px 32px;
-  margin-top: 48px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.special .container-mx-auto .colums-grid .special-day .buttons:hover {
-  background-color: var(--color-amber-300);
 }
 @media (max-width: 1024px) {
   .special .colums-grid {
@@ -711,7 +706,8 @@ body {
 }
 .location .container-mx-auto .colums-grid .encuentranos h1 {
   font-family: var(--font-family-cinzel);
-  font-size: var(--font-size-3xl);
+  font-size: 3.25rem;
+  font-weight: 500;
   margin-bottom: 32px;
 }
 .location .container-mx-auto .colums-grid .encuentranos .space {

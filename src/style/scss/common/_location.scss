@@ -24,7 +24,6 @@
 }
 
 .location {
-  //background-color: var(--color-bg-secondary);
   width: 100%;
   padding: 96px 0;
 
@@ -74,7 +73,8 @@
 
         h1 {
           font-family: var(--font-family-cinzel);
-          font-size: var(--font-size-3xl);
+          font-size: 3.25rem;
+          font-weight: 500;
           margin-bottom: 32px;
         }
 

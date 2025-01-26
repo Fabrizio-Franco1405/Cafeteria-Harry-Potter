@@ -30,7 +30,6 @@
 }
 
 .special {
-  //background-color: var(--color-bg-secondary);
   width: 100%;
   padding: 96px 0;
 
@@ -65,12 +64,18 @@
         @media (min-width: 1024px) {
           min-height: auto;
         }
-
+        
+        &:hover img {
+          transform: scale(1.08);
+        }
+        
         img {
-            background-color: white;
-            height: 100%;
-            width: 100%;
-            position: absolute;
+          background-color: white;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          transform: scale(1);
+          transition: transform 0.3s ease;
         }
 
         .filter {
@@ -97,6 +102,10 @@
           line-height: 4.5rem;
           margin-top: 15px;
         }
+
+        .icon-magic-wand {
+          margin-right: 0.8rem;
+        }
         
         h2 {
             font-family: var(--font-family-cinzel);
@@ -106,6 +115,7 @@
         
         p {
             font-family: var(--font-family-geist);
+            color: var(--color-amber-200-80);
             line-height: 1.75rem;
             margin-bottom: 32px;
             margin-top: 20px;
@@ -136,22 +146,6 @@
             color: var(--icon-color);
             font-family: var(--font-family-geist);
             font-size: 0.95rem;
-          }
-        }
-
-        .buttons {
-          background-color: var(--color-amber-400);
-          font-weight: var(--font-weight-regular);
-          font-size: 16px;
-          border-radius: 9999px;
-          border: none;
-          padding: 14px 32px;
-          margin-top: 48px;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
-
-          &:hover {
-            background-color: var(--color-amber-300);
           }
         }
       }
